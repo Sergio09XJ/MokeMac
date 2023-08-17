@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>¡Super Mokepon Tremendo!</title>
+        <link rel = "stylesheet" href="stySuperm.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <section id = "seleccionar-mascota">
+            <h1 id = "tituloid" class ="titulo" >¡Super Mokepon!</h1>
+            <h2 id = "selecciona-a-mascota" >Selecciona a tu Mascota: </h2>
+            
+            <div  id = "contenedor-tarjetas" class = "tarjetas-mokepon">
+            </div>
+            
+            <button id = "boton-mascota" class = "boton-mascota">Seleccionar </button>
+        </section>
+        
+       <section id = "sectionVerMapa" >
+        <h2 id  = "Subtitulo" >Recorre el Mapa con tu Mokepon</h2>
+        <canvas id = "mapa" ></canvas>
+        <button id = "arriba" ontouchstart = "Arriba()" ontouchend = "detenermovimiento()" onmousedown = "Arriba()"  onmouseup = "detenermovimiento()">Arriba</button>
+        <div>
+          <button id = "izquierda" ontouchstart = "Izquierda()" onmousedown = "Izquierda()" ontouchend = "detenermovimiento()" onmouseup="detenermovimiento()">Izquierda</button>  
+          <button id = "derecha" ontouchstart = "Derecha()"  onmousedown = "Derecha()"   ontouchend = "detenermovimiento()" onmouseup="detenermovimiento()">Derecha</button>
+        </div>
+        <button id = "abajo"   ontouchstart = "Abajo()"  onmousedown = "Abajo()"     ontouchend = "detenermovimiento()" onmouseup="detenermovimiento()">Abajo</button>
+       </section>
+
+        <section id = "seleccionar-ataque">
+            <h1 id = "tituloid" class ="titulo" >¡Super Mokepon!</h1>
+
+            <div class = "parrafos">
+              <p id = "parrafo-jugador"><span  id = "mascota-jugador"></span> Victorias: <span id = "vidas-jugador">0</span> </p>
+              <p id = "parrafo-enemigo"><span  id = "mascota-enemigo"></span> Victorias: <span id = "vidas-enemigo">0</span> </p>
+           </div>
+
+            <h2>Selecciona tu ataque: </h2>
+
+            <div id = "contenedor-ataques">
+            </div>
+           
+            <section id = "mensaje-reiniciar">
+                <section id = "mensajefinal" >Buena Suerte!!!</section>          
+                <button id = "Reiniciar" >Reiniciar</button> 
+            </section>
+
+            <div id = "mensajes">
+              <section id = "mensajesJugador"></section>
+              <section id = "mensajesEnemigo"></section>
+            </div>
+           
+        </section>  
+        <script src = "Super_Mokepon.js"></script>  
+    </body>  
+</html>         

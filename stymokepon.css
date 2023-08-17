@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:ital@1&display=swap');
+
+body{
+  font-family: 'Grupo', cursive;
+  background-image: url(assets/fondo_MoradoO.png)
+}
+
+.elTitulo {
+  color: #BFACE2;
+  font-size: 61px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+  border-radius: 16px;
+ 
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo{
+  font-size: 29px;
+  color: #A084DC;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display:  flex ;
+  gap: 5px;
+}
+
+.tarjetaDeMokepon {
+  width: 150px;
+  height: 63px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+  border-radius: 16px;
+  display: flex;
+  color: #EBC7E6;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5.5px 0px 5.5px;
+}
+
+
+.tarjetaDeMokepon img {
+  width: 50px;
+  margin-left: 2px;
+}
+
+
+
+input {
+ display : none;
+}
+input:checked + label {
+  background-color: #66347F;
+}
+#boton-mascota{
+  width: 150px;
+  height: 55px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #f3f5f6;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+  border-radius: 16px;
+  color: #B9F3FC;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+
+
+}
+
+#seleccionar-ataque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botonDeAtaque{
+  width: 100px;
+  height: 55px;
+  border-radius: 20px;
+  border:2px solid white;
+  margin: 0px 5.5px 0px 5.5px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+}
+
+#mensajes{
+  width: 313px;
+  height: 64px;
+  color: #FFEAEA;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#boton-reiniciar{
+  width: 84px;
+  height: 23px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(63px);
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: #F5C6EC;
+}
+
+.pAtaques{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  text-align: center;
+}
+
+.ataques-jugador, .ataques-enemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F5C6EC;
+}
+
+@media(max-width: 360px){
+  .tarjetas, .tarjetas-ataques{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,412 @@
+/*Para manipular con la clase se pone un punto seguido de la clase
+Para manipular con el id se pone un hashtag seguido de el id 
+box-shadow: 0 0 10px;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Titillium+Web:wght@300;400&display=swap');
+
+body{
+    background-color:rgb(246, 246, 246);
+}
+
+#tituloid{
+    color: #010309;
+    font-family: 'Titillium Web', sans-serif;
+    width: 365px;
+    height: 70px;
+    margin: 60px 60px 10px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 270%;
+   
+}
+
+#seleccionar-mascota{
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#selecciona-a-mascota{
+  margin: 81px 0px 70px;
+}
+
+.tarjetas-mokepon{
+    display:flex;
+}
+
+#mascota img{
+    width: 69px;
+    height: 68px;
+   }
+
+.Hipodoge, .Capipepo, .Ratigueya, .Langostelvis, .Tucapalma, .Pydos{
+    font-family: 'Titillium Web', sans-serif;
+    width: 161px;
+    height: 95px;
+    padding: 19px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 9px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1.5px 1.5px;
+    transition: .3s;  
+}  
+
+
+
+.Hipodoge:hover{
+    color: rgb(66, 162, 231);
+    border: 3px solid rgb(66, 162, 231);
+    box-shadow: 2.8px 2.8px;
+}.Hipodoge:active{
+    border: 2px solid rgb(66, 162, 231);
+    background-color:rgba(66, 162, 231, 0.601);
+    box-shadow: 1.5px 1.5px;
+}
+
+.Capipepo:hover{
+    color: rgb(93, 190, 48);
+    border: 3px solid rgb(93, 190, 48);
+    box-shadow: 2.8px 2.8px;
+}.Capipepo:active{
+    border: 2px solid rgb(93, 190, 48);
+    background-color:rgba(115, 226, 64, 0.569);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+.Ratigueya:hover{
+    color: rgb(231, 85, 66);
+    border: 2.5px solid  rgb(231, 85, 66);
+    box-shadow: 2.8px 2.8px;  
+}.Ratigueya:active{
+    border: 2px solid  rgb(231, 85, 66);
+    background-color: rgba(231, 85, 66, 0.611);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+.Langostelvis:hover{
+    color: rgb(231, 149, 66);
+    border: 2.5px solid  rgb(231, 165, 66);
+    box-shadow: 2.8px 2.8px;  
+}.Langostelvis:active{
+    border: 2px solid  rgb(231, 165, 66);
+    background-color: rgba(231, 168, 66, 0.611);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+.Tucapalma:hover{
+    color: #FCAEAE;
+    border: 2.5px solid  #FCAEAE;
+    box-shadow: 2.8px 2.8px;  
+}.Tucapalma:active{
+    border: 2px solid  #FCAEAE;
+    background-color: #fcaeae9e;
+    box-shadow: 1.5px 1.5px;
+}
+
+
+.Pydos:hover{
+    color: rgb(66, 105, 231);
+    border: 2.5px solid  rgb(66, 105, 231);
+    box-shadow: 2.8px 2.8px;  
+}.Pydos:active{
+    border: 2px solid  rgb(66, 105, 231);
+    background-color: rgba(66, 113, 231, 0.611);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+#boton-mascota{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 130px 60px 60px 60px;
+    width: 112px;
+    height: 45px;
+    border-radius: 13px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 2px solid;
+    font-size: 80%;
+    box-shadow: 1.5px 1.5px;
+}
+#boton-mascota:hover{
+    color:rgb(0, 0, 255);
+    box-shadow: 2.5px 2.5px;
+}#boton-mascota:active{
+    border: 2px solid rgb(0, 0, 255);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+/*input{
+    display: none;
+}*/
+
+#seleccionar-ataque{
+    font-family: 'Titillium Web', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-fuego, #boton-tierra, #boton-agua, #boton-magia, #boton-aire, #boton-rayo{
+    font-family: 'Titillium Web', sans-serif;
+    width: 138px;
+    height: 64px;
+    padding: 19px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 30px 7px 50px 7px;
+    border-radius: 26px;
+    color: rgb(0, 0, 0);
+    box-shadow: 1.5px 1.5px;
+    font-size: 100%;
+    background-color:  rgb(255, 255, 255);
+}
+#boton-fuego:hover{
+    color: rgb(255, 0, 0);
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 2.5px 2.5px; 
+}#boton-fuego:active{
+    box-shadow: 1.5px 1.5px;
+    background-color: rgba(255, 0, 0, 0.458);
+}
+
+#boton-tierra:hover{
+    color: #1ad880;
+    border: 3px solid #1ad880;
+    box-shadow: 2.5px 2.5px;  
+}#boton-tierra:active{
+    box-shadow: 1.5px 1.5px;
+    background-color: #00ff556f;
+}
+
+#boton-agua:hover{
+    color: #00a6ff;
+    border: 3px solid #00a6ff;
+    box-shadow: 2.5px 2.5px;
+}#boton-agua:active{
+    box-shadow: 1.5px 1.5px;
+    background-color:#00a6ff75;
+}
+
+#boton-magia:hover{
+    color: #9376E0;
+    border: 3px solid #9376E0;
+    box-shadow: 2.5px 2.5px;
+}#boton-magia:active{
+    box-shadow: 1.5px 1.5px;
+    background-color:#9276e05c;
+}
+
+#boton-aire:hover{
+    color: #c6cddb;
+    border: 3px solid #c6cddb;
+    box-shadow: 2.5px 2.5px;
+}#boton-aire:active{
+    box-shadow: 1.5px 1.5px;
+    background-color:#ECF2FF;
+}
+
+#boton-rayo:hover{
+    color: #FFD95A;
+    border: 3px solid #FFD95A;
+    box-shadow: 2.5px 2.5px;
+}#boton-rayo:active{
+    box-shadow: 1.5px 1.5px;
+    background-color:#ffd95a6e;
+}
+
+
+
+
+
+
+.parrafos{
+    margin-left: -2px;
+    display:flex 
+}
+#parrafo-jugador{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 43px;
+    box-sizing: border-box;
+    margin-right: 27px;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 7px 17px ;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 176px;
+    height: 6px;
+    justify-content: center;
+    font-size: 121%;
+    
+}
+#parrafo-enemigo{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 43px;
+    box-sizing: border-box;
+    margin-right: 27px;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 17px 7px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 176px;
+    height: 6px;
+    justify-content: center;
+    font-size: 121%;
+  
+}
+
+
+
+#Reiniciar{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 14px 59px 5px 60px;
+    width: 112px;
+    height: 45px;
+    border-radius: 13px;
+    padding: 9px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 2px solid;
+    font-size: 89%;
+    box-shadow: 1.5px 1.5px;
+}
+#Reiniciar:hover{
+    color:rgb(0, 0, 255);
+    box-shadow: 2.5px 2.5px;
+}#Reiniciar:active{
+    border: 2px solid rgb(0, 0, 255);
+    box-shadow: 1.5px 1.5px;
+}
+
+#mensaje-reiniciar{
+    font-size: 20px;
+    border: 3px solid;
+    border-radius: 17px;
+    width: 266px;
+    height: 126px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+}
+
+#mensajes{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-column-gap: 25px;
+}
+
+
+#mensajesJugador{
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-radius: 21px;
+    margin-top: 35px;
+
+}
+#mensajesEnemigo{
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-radius: 21px;
+    margin-top: 35px;
+}
+
+#sectionVerMapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+#mapa{
+    border: 2.5px solid black;
+    border-radius: 21px;
+    box-shadow: 0 0 5px;
+}
+
+#sectionVerMapa button{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 20px 6px -7px 1px;
+    width: 80px;
+    height: 45px;
+    border-radius: 13px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 2px solid;
+    font-size: 80%;
+    box-shadow: 1.5px 1.5px;
+}
+#sectionVerMapa button:hover{
+    color:rgb(0, 0, 255);
+    box-shadow: 2.5px 2.5px;
+}#sectionVerMapa button:active{
+    border: 2px solid rgb(0, 0, 255);
+    box-shadow: 1.5px 1.5px;
+}
+
+
+
+
+  
+  @media(max-width: 560px){
+  
+  #selecciona-a-mascota{
+      margin: 71px 0px 157px;
+  }   
+  
+  .tarjetas-mokepon{
+      flex-direction: column;
+      color: rgb(0, 0, 0);
+    
+  }
+  
+  #nombre-de-mascota{
+    margin-top: 1px;
+    margin-bottom: -9px;
+  }
+  
+  .boton-mascota{
+      margin-top: 30px;
+      background-color: rgba(0, 0, 0, 0.01);
+  }
+  
+  #boton-tierra, #boton-fuego, #boton-agua, #boton-magia, #boton-aire, #boton-rayo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 25px 0px 25px 0px;
+  }   
+  
+  #parrafo-enemigo, #parrafo-jugador{
+      border: 2.5px solid rgb(0, 0, 0);
+      padding: 43px;
+      box-sizing: border-box;
+      margin-right: 15px;
+      margin-left: 15px;
+      background-color:  rgb(255, 255, 255);
+      border-radius: 5px 5px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      width: 117px;
+      height: 10px;
+      justify-content: center;
+      font-size: 121%;
+  }
+  
+}
